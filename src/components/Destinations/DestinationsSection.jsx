@@ -9,8 +9,8 @@ const tags = [
 
 const DestinationsSection = () => {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-16 bg-white">
+      <div className="app-wrap">
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Destinations</h2>
           <div className="mt-2 mb-6 flex justify-center">

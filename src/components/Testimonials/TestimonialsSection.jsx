@@ -23,8 +23,8 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 px-4 bg-[#F8F8F8]">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 bg-[#F8F8F8]">
+      <div className="app-wrap">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Testimonials</h2>
           <div className="mt-2 flex justify-center">

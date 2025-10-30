@@ -5,6 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide scrollbar utility for overflowing containers */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Global app content wrapper to align sections consistently */
+.app-wrap {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 html, body, #root {
   height: 100%;
 }

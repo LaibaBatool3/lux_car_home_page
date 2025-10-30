@@ -17,7 +17,7 @@ const HeroSection = () => {
     >
       {/* Content - Centered */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center pt-20">
-        <div className="container mx-auto px-4 max-w-6xl text-center">
+        <div className="app-wrap text-center">
           {/* Main Title */}
           <h1 
             className="mb-4 md:mb-5 text-5xl md:text-6xl font-bold text-white tracking-tight"
@@ -63,7 +63,7 @@ const HeroSection = () => {
         </div>
         
         {/* Search Bar - Positioned at bottom */}
-        <div className="w-full max-w-6xl mx-auto px-4">
+        <div className="w-full app-wrap">
           <SearchBar />
         </div>
       </div>

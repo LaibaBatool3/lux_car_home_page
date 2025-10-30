@@ -11,8 +11,8 @@ const items = [
 
 const BuyNowSection = () => {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-16 bg-white">
+      <div className="app-wrap">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Buy Now</h2>
           <div className="mt-2 flex justify-center">

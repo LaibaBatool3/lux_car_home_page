@@ -14,8 +14,8 @@ const mock = [
 
 const BidCarSection = () => {
   return (
-    <section className="bg-[#F8F8F8] py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-[#F8F8F8] py-16">
+      <div className="app-wrap">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Bid Car</h2>
           <div className="mt-2 flex justify-center">

@@ -24,7 +24,7 @@ const TopBar = () => {
 
   return (
     <div className="py-2 bg-[#7A798A]/90 text-white border-b border-white/10">
-      <div className="max-w-full mx-auto px-4 md:px-16 lg:px-44 xl:px-64 flex justify-between items-center">
+      <div className="app-wrap flex justify-between items-center">
         {/* Left side - Auction announcement */}
         <div className="flex items-center">
           <span 

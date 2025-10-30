@@ -7,6 +7,8 @@ import { BuyNowSection } from './components/BuyNow'
 import { DestinationsSection } from './components/Destinations'
 import { TestimonialsSection } from './components/Testimonials'
 import { PopularMakesSection } from './components/PopularMakes'
+import { RegisterSection } from './components/Register'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <DestinationsSection />
       <TestimonialsSection />
       <PopularMakesSection />
+      <RegisterSection />
+      <Footer />
     </div>
   )
 }

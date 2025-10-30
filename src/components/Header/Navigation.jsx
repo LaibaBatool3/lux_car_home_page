@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <nav className="w-full relative bg-transparent border-b border-white/20 text-white">
       {/* Navigation content */}
-      <div className="relative z-10 flex justify-between items-center h-20 px-4 md:px-16 lg:px-44 xl:px-64 max-w-full overflow-x-hidden">
+      <div className="relative z-10 app-wrap flex justify-between items-center h-20">
         
         {/* Logo */}
         <div className="flex items-center">
