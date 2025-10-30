@@ -1,6 +1,5 @@
 import React from 'react';
 import SearchBar from './SearchBar';
-import heroCarImage from '../../assets/Background.png';
 
 const HeroSection = () => {
   const handleStartBidding = () => {
@@ -8,75 +7,64 @@ const HeroSection = () => {
     // Here you would typically navigate to auctions page or open a modal
   };
 
+  const handleSellCar = () => {
+    console.log('Selling car...');
+  };
+
   return (
     <section 
-      className="relative text-white"
-      style={{
-        width: '1920px',
-        height: '750px',
-        top: '40px',
-        opacity: 1,
-        backgroundImage: `url(${heroCarImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="relative text-white w-full min-h-[calc(100vh-80px)] md:min-h-[750px]"
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left side - Content */}
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                Online Car Auctions With{' '}
-                <span className="text-red-500">Home Delivery!</span>
-              </h1>
-              
-              <p className="text-gray-200 text-lg leading-relaxed">
-                Discover premium vehicles from trusted dealers. Bid on luxury cars, 
-                classic automobiles, and modern vehicles with confidence. Fast, secure, 
-                and delivered right to your doorstep.
-              </p>
-              
-              <button 
-                onClick={handleStartBidding}
-                className="bg-red-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors duration-200 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <span>Start Bid or Buy</span>
-                <span>🚗</span>
-              </button>
-              
-              {/* Search Bar */}
-              <div className="pt-4">
-                <SearchBar />
-              </div>
-              
-              {/* Trust indicators */}
-              <div className="flex flex-wrap gap-6 pt-4">
-                <div className="flex items-center space-x-2 text-sm text-gray-200">
-                  <span className="text-green-400">✓</span>
-                  <span>Verified Dealers</span>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-200">
-                  <span className="text-green-400">✓</span>
-                  <span>Secure Payments</span>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-200">
-                  <span className="text-green-400">✓</span>
-                  <span>Free Delivery</span>
-                </div>
-              </div>
-            </div>
+      {/* Content - Centered */}
+      <div className="relative z-10 h-full flex flex-col justify-center items-center pt-20">
+        <div className="container mx-auto px-4 max-w-6xl text-center">
+          {/* Main Title */}
+          <h1 
+            className="mb-4 md:mb-5 text-5xl md:text-6xl font-bold text-white tracking-tight"
+          >
+            Bid, Buy, Drive
+          </h1>
+          
+          {/* Subtitle */}
+          <h2 className="mb-3 md:mb-4 text-base md:text-2xl font-semibold text-white">
+            <span className="text-[#E94141]">Online Car Auctions</span> With Home Delivery!
+          </h2>
+          
+          {/* Description */}
+          <p className="mb-8 md:mb-10 max-w-2xl mx-auto text-gray-300 text-sm md:text-base">
+            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Ejusmo
+          </p>
+          
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 md:mb-14">
+            <button 
+              onClick={handleSellCar}
+              className="bg-white text-black px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              {/* Rocket Icon */}
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <span>Sell Car</span>
+            </button>
             
-            {/* Right side - Car Image (now background) */}
-            <div className="relative order-2 md:order-1">
-              {/* This space is now filled by the background image */}
-            </div>
+            <button 
+              onClick={handleStartBidding}
+              className="bg-[#E94141] text-white px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              {/* Auction Hammer/Gavel Icon */}
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 6h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM9 4h6v2H9V4zm11 14H4V8h16v10z"/>
+                <path d="M12 10l-4 4h3v4h2v-4h3l-4-4z"/>
+              </svg>
+              <span>Start Bidding</span>
+            </button>
           </div>
+        </div>
+        
+        {/* Search Bar - Positioned at bottom */}
+        <div className="w-full max-w-6xl mx-auto px-4">
+          <SearchBar />
         </div>
       </div>
     </section>

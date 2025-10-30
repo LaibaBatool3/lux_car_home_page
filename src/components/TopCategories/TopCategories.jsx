@@ -2,73 +2,39 @@ import React from 'react';
 import CategoryCard from './CategoryCard';
 
 const TopCategories = () => {
-  const categories = [
-    {
-      id: 1,
-      name: 'Motorcycle',
-      icon: '🏍️',
-      count: 120,
-      description: 'Sport bikes, cruisers, and touring motorcycles'
-    },
-    {
-      id: 2,
-      name: 'SUVs',
-      icon: '🚙',
-      count: 85,
-      description: 'Family-friendly SUVs and crossovers'
-    },
-    {
-      id: 3,
-      name: 'Sedan',
-      icon: '🚗',
-      count: 95,
-      description: 'Luxury sedans and executive cars'
-    },
-    {
-      id: 4,
-      name: 'Truck',
-      icon: '🚛',
-      count: 67,
-      description: 'Pickup trucks and commercial vehicles'
-    }
+  const items = [
+    { title: 'Automobiles', image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'Super Cars', image: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'Motorcycles', image: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'ATVs', image: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'Bus', image: 'https://images.unsplash.com/photo-1494515840801-78edb435c08b?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'Truck', image: 'https://images.unsplash.com/photo-1537819191375-6c3d8e72b33f?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'Trailer', image: 'https://images.unsplash.com/photo-1619646074360-74c6aac9f5fd?w=200&h=200&fit=crop', count: 6923 },
+    { title: 'Motor Home', image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=200&h=200&fit=crop', count: 6923 }
   ];
 
-  const handleCategoryClick = (category) => {
-    console.log(`Clicked on ${category.name} category`);
-    // Here you would typically navigate to a category page or filter results
-  };
-
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Top Categories
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our most popular vehicle categories. From luxury sedans to powerful trucks, 
-            find the perfect vehicle for your needs.
-          </p>
+    <section className="py-16 px-4 bg-white">
+      <div className="max-w-6xl mx-auto">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Top Categories</h2>
+          <div className="mt-2 flex justify-center">
+            <span className="h-1 w-16 bg-[#E94141] rounded-full"></span>
+          </div>
         </div>
-        
-        {/* Categories Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {categories.map((category) => (
-            <CategoryCard
-              key={category.id}
-              category={category.name}
-              icon={category.icon}
-              count={category.count}
-              onClick={() => handleCategoryClick(category)}
-            />
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+          {items.map((it) => (
+            <CategoryCard key={it.title} title={it.title} count={it.count} image={it.image} />
           ))}
         </div>
-        
-        {/* View All Button */}
-        <div className="text-center mt-8">
-          <button className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors duration-200 font-medium">
-            View All Categories
+
+        {/* Load More */}
+        <div className="flex justify-center mt-10">
+          <button className="px-8 md:px-10 py-3.5 rounded-full bg-[#F3F3F6] shadow hover:shadow-md transition text-[#E94141] font-semibold" style={{ boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
+            Load More
           </button>
         </div>
       </div>

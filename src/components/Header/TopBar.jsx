@@ -23,11 +23,19 @@ const TopBar = () => {
   ];
 
   return (
-    <div className="py-2" style={{ backgroundColor: '#7A798A' }}>
-      <div className="max-w-7xl mx-auto px-64 flex justify-between items-center">
+    <div className="py-2 bg-[#7A798A]/90 text-white border-b border-white/10">
+      <div className="max-w-full mx-auto px-4 md:px-16 lg:px-44 xl:px-64 flex justify-between items-center">
         {/* Left side - Auction announcement */}
         <div className="flex items-center">
-          <span className="text-white text-sm font-semibold uppercase tracking-wide">
+          <span 
+            className="text-white uppercase"
+            style={{
+              fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+              fontSize: '0.875rem',
+              fontWeight: 700,
+              letterSpacing: '0.05em'
+            }}
+          >
             BMW XYZ 2018 IS GOING LIVE FOR AUCTION IN 5 MINUTES!!
           </span>
         </div>
@@ -39,10 +47,15 @@ const TopBar = () => {
             <select 
               value={selectedTimezone}
               onChange={(e) => setSelectedTimezone(e.target.value)}
-              className="bg-[#7A798A] border border-white text-gray-100 text-xs px-3 py-1 pr-6 rounded appearance-none cursor-pointer hover:bg-gray-300 transition-colors duration-200"
+              className="bg-transparent border border-white/40 text-gray-100 px-3 py-1 pr-6 rounded appearance-none cursor-pointer hover:border-white/60 transition-colors duration-200 text-xs"
+              style={{
+                fontFamily: 'Poppins, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+                fontSize: '0.75rem',
+                fontWeight: 400
+              }}
             >
               {timezones.map((tz) => (
-                <option key={tz} value={tz}>{tz} UTC</option>
+                <option key={tz} value={tz} className="text-gray-900">{tz} UTC</option>
               ))}
             </select>
             <div className="absolute inset-y-0 right-1 flex items-center pointer-events-none">
@@ -57,10 +70,15 @@ const TopBar = () => {
             <select 
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
-              className="bg-[#7A798A] border border-white text-gray-100 text-xs px-3 py-1 pr-6 rounded appearance-none cursor-pointer hover:bg-gray-300 transition-colors duration-200"
+              className="bg-transparent border border-white/40 text-gray-100 px-3 py-1 pr-6 rounded appearance-none cursor-pointer hover:border-white/60 transition-colors duration-200 text-xs"
+              style={{
+                fontFamily: 'Poppins, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+                fontSize: '0.75rem',
+                fontWeight: 400
+              }}
             >
               {languages.map((lang) => (
-                <option key={lang} value={lang}>{lang}</option>
+                <option key={lang} value={lang} className="text-gray-900">{lang}</option>
               ))}
             </select>
             <div className="absolute inset-y-0 right-1 flex items-center pointer-events-none">

@@ -1,29 +1,27 @@
 import React from 'react';
 
-const CategoryCard = ({ category, icon, count, onClick }) => {
+const CategoryCard = ({ title, count, image }) => {
   return (
-    <div 
-      className="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-all duration-300 cursor-pointer transform hover:-translate-y-2 hover:border-red-300"
-      onClick={onClick}
+    <div
+      className="rounded-2xl bg-white p-4 md:p-5 shadow-md hover:shadow-lg transition relative"
+      style={{ boxShadow: '0 10px 30px rgba(3,37,76,0.18)' }}
     >
-      {/* Icon */}
-      <div className="text-4xl mb-4 transition-transform duration-300 hover:scale-110">
-        {icon}
-      </div>
-      
-      {/* Category Name */}
-      <h3 className="text-lg font-semibold text-gray-800 mb-2">
-        {category}
-      </h3>
-      
-      {/* Count Badge */}
-      <div className="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto text-sm font-bold">
-        {count}
-      </div>
-      
-      {/* Hover effect indicator */}
-      <div className="mt-3 text-xs text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        Click to explore
+      <div className="flex items-center gap-4">
+        {/* Image with badge */}
+        <div className="relative shrink-0">
+          <div className="h-14 w-14 md:h-16 md:w-16 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center">
+            <img src={image} alt={title} className="h-full w-full object-cover" />
+          </div>
+          <span className="absolute -bottom-1 -right-1 h-6 w-6 rounded-full bg-[#E94141] text-white grid place-items-center shadow">
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </span>
+        </div>
+
+        {/* Texts */}
+        <div>
+          <h3 className="text-gray-900 font-semibold text-base md:text-lg leading-tight">{title}</h3>
+          <p className="text-gray-500 text-sm">{count} Available</p>
+        </div>
       </div>
     </div>
   );

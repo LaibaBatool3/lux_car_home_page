@@ -1,16 +1,24 @@
 import './App.css'
 import { Header } from './components/Header'
-import { HeroSection } from './components/HeroSection'
 import { TopCategories } from './components/TopCategories'
+import { BidCarSection } from './components/BidCar'
+import { LocalOffersSection } from './components/LocalOffers'
+import { BuyNowSection } from './components/BuyNow'
+import { DestinationsSection } from './components/Destinations'
+import { TestimonialsSection } from './components/Testimonials'
+import { PopularMakesSection } from './components/PopularMakes'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white w-full overflow-x-hidden">
       <Header />
-      <HeroSection />
       <TopCategories />
-
-    
+      <BidCarSection />
+      <LocalOffersSection />
+      <BuyNowSection />
+      <DestinationsSection />
+      <TestimonialsSection />
+      <PopularMakesSection />
     </div>
   )
 }
