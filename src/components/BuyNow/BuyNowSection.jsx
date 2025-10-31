@@ -1,12 +1,16 @@
 import React from 'react';
 import BuyNowCard from './BuyNowCard';
 import CarouselControls from '../shared/CarouselControls';
+import car1 from '../../images/car1.png';
+import car2 from '../../images/car2.png';
+import car3 from '../../images/car3.png';
+import car4 from '../../images/car4.png';
 
 const items = [
-  { image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800', title: '“Hyundai Sonata”', creator: 'SalvadorDali', currentBid: '$750', buyPrice: '$6,000' },
-  { image: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=800', title: '“Chevrolet Cruise Limite…”', creator: 'Trista Francis', currentBid: '$750', buyPrice: '$22,000' },
-  { image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800', title: '“RAM 1500”', creator: 'Freddie Carpenter', currentBid: '$1,350', buyPrice: '$13,000' },
-  { image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800', title: '“Toyota FJ”', creator: 'Tyler Covington', currentBid: '$20,000', buyPrice: '$11,000' },
+  { image: car1, title: '“Hyundai Sonata”', creator: 'SalvadorDali', currentBid: '$750', buyPrice: '$6,000' },
+  { image: car2, title: '“Chevrolet Cruise Limite…”', creator: 'Trista Francis', currentBid: '$750', buyPrice: '$22,000' },
+  { image: car3, title: '“RAM 1500”', creator: 'Freddie Carpenter', currentBid: '$1,350', buyPrice: '$13,000' },
+  { image: car4, title: '“Toyota FJ”', creator: 'Tyler Covington', currentBid: '$20,000', buyPrice: '$11,000' },
 ];
 
 const BuyNowSection = () => {

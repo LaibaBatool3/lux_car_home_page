@@ -24,7 +24,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-[#F8F8F8]">
-      <div className="app-wrap">
+      <div className="app-wrap side-180">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Testimonials</h2>
           <div className="mt-2 flex justify-center">
@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
           {testimonials.map((t, i) => (
             <div key={i} className="pb-12">
-              <TestimonialCard {...t} cardClass="w-[370px] h-[340px] md:h-[410px] mx-auto" />
+              <TestimonialCard {...t} cardClass="w-[320px] h-[320px] md:w-[340px] md:h-[360px] mx-auto" />
             </div>
           ))}
         </div>

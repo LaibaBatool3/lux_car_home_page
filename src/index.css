@@ -18,6 +18,33 @@
   padding-right: 24px;
 }
 
+/* Utility for explicit 180px side padding (e.g., two-card sections) */
+.side-180 { padding-left: 180px; padding-right: 180px; }
+@media (max-width: 1770px) { .side-180 { padding-left: 24px; padding-right: 24px; } }
+
+/* Left-only 180px padding helper (desktop), collapses on narrow screens */
+.side-left-180 { padding-left: 180px; }
+@media (max-width: 1770px) { .side-left-180 { padding-left: 24px; } }
+
+/* Footer specific wrapper (stronger side padding and centered) */
+.footer-wrap {
+  /* Centered container with responsive side gutters */
+  max-width: 1410px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+/* When the viewport is smaller than the content + gutters, reduce the gutters to avoid clipping */
+@media (max-width: 1770px) {
+  .footer-wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 html, body, #root {
   height: 100%;
 }

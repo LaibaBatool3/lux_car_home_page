@@ -24,7 +24,7 @@ const TopBar = () => {
 
   return (
     <div className="py-2 bg-[#7A798A]/90 text-white border-b border-white/10">
-      <div className="app-wrap flex justify-between items-center">
+      <div className="flex justify-around items-center">
         {/* Left side - Auction announcement */}
         <div className="flex items-center">
           <span 
@@ -32,7 +32,7 @@ const TopBar = () => {
             style={{
               fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               fontSize: '0.875rem',
-              fontWeight: 700,
+              fontWeight: 500,
               letterSpacing: '0.05em'
             }}
           >

@@ -1,16 +1,24 @@
 import React from 'react';
 import CategoryCard from './CategoryCard';
+import AutomobilesImg from '../../assets/Automobiles.png';
+import SuperCarsImg from '../../assets/SuperCars.png';
+import MotorcycleImg from '../../assets/Motorcycle.png';
+import ATVsImg from '../../assets/ATVs.png';
+import BusImg from '../../assets/Bus.png';
+import TruckImg from '../../assets/Truck.png';
+import TrailerImg from '../../assets/Trailor.png';
+import MotorHomeImg from '../../assets/MotorHome.png';
 
 const TopCategories = () => {
   const items = [
-    { title: 'Automobiles', image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'Super Cars', image: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'Motorcycles', image: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'ATVs', image: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'Bus', image: 'https://images.unsplash.com/photo-1494515840801-78edb435c08b?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'Truck', image: 'https://images.unsplash.com/photo-1537819191375-6c3d8e72b33f?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'Trailer', image: 'https://images.unsplash.com/photo-1619646074360-74c6aac9f5fd?w=200&h=200&fit=crop', count: 6923 },
-    { title: 'Motor Home', image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=200&h=200&fit=crop', count: 6923 }
+    { title: 'Automobiles', image: AutomobilesImg, count: 6923 },
+    { title: 'Super Cars', image: SuperCarsImg, count: 6923 },
+    { title: 'Motorcycles', image: MotorcycleImg, count: 6923 },
+    { title: 'ATVs', image: ATVsImg, count: 6923 },
+    { title: 'Bus', image: BusImg, count: 6923 },
+    { title: 'Truck', image: TruckImg, count: 6923 },
+    { title: 'Trailer', image: TrailerImg, count: 6923 },
+    { title: 'Motor Home', image: MotorHomeImg, count: 6923 }
   ];
 
   return (

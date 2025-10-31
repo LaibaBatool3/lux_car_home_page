@@ -1,15 +1,19 @@
 import React from 'react';
 import LocalOfferCard from './LocalOfferCard';
+import car1 from '../../images/car1.png';
+import car2 from '../../images/car2.png';
+import car3 from '../../images/car3.png';
+import car4 from '../../images/car4.png';
 
 const data = [
-  { image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1493238792000-8113da705763?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
-  { image: 'https://images.unsplash.com/photo-1471478331149-c72f17e33c73?w=800', title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car1, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car2, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car3, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car4, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car1, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car2, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car3, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
+  { image: car4, title: '“Hyundai Sonata”', transmission: 'Automatic', location: 'America Washington', mileage: '17090' },
 ];
 
 const LocalOffersSection = () => {

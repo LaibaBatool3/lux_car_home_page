@@ -18,10 +18,10 @@ const SocialIconImg = ({ src, alt }) => (
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200">
-      <div className="app-wrap py-12">
-        <div className="flex items-start gap-[27px] overflow-x-auto scrollbar-hide">
+      <div className="py-12">
+        <div className="w-[1041px] max-w-full mx-auto flex items-start" style={{ gap: '27px' }}>
           {/* Brand */}
-          <div className="md:col-span-2 min-w-[220px]">
+          <div className="md:col-span-2 min-w-[220px] flex-shrink-0">
             <img src={logo} alt="LUX" className="h-10 mb-4" />
             <p className="text-[12px] text-[#2C3548]/80 leading-6 mb-3">
               Trust in the Lord with all your heart,
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           {/* Shipping Destinations */}
-          <div className="min-w-[160px]">
+          <div className="min-w-[160px] flex-shrink-0">
             <h4 className="font-semibold text-[#2C3548] text-sm mb-4">Shipping Destinations</h4>
             <FooterLink>Nassau</FooterLink>
             <FooterLink>Freeport</FooterLink>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           {/* Useful Links */}
-          <div className="min-w-[160px]">
+          <div className="min-w-[160px] flex-shrink-0">
             <h4 className="font-semibold text-[#2C3548] text-sm mb-4">Useful Links</h4>
             <FooterLink>Influencer Partners</FooterLink>
             <FooterLink>Privacy Policies</FooterLink>
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
           {/* Company */}
-          <div className="min-w-[180px]">
+          <div className="min-w-[180px] flex-shrink-0">
             <h4 className="font-semibold text-[#2C3548] text-sm mb-4">Company</h4>
             <FooterLink>About Us</FooterLink>
             <FooterLink>Contact Us</FooterLink>
@@ -65,7 +65,7 @@ const Footer = () => {
             <FooterLink>Discover</FooterLink>
           </div>
           {/* Subscribe */}
-          <div className="min-w-[220px]">
+          <div className="min-w-[180px] flex-shrink-0">
             <h4 className="font-semibold text-[#2C3548] text-sm mb-4">Subscribe</h4>
             <p className="text-[12px] text-[#2C3548]/80 mb-2">HeadQuarters: Abaco, Bahamas<br/>Ph no.: +12428259510</p>
             <div className="flex items-center">
