@@ -1,4 +1,5 @@
 import React from 'react';
+import fireImg from '../../images/fire.png';
 
 const Chip = ({ children, color = '#E94141' }) => (
   <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold" style={{ backgroundColor: color, color: '#fff' }}>{children}</span>
@@ -6,7 +7,7 @@ const Chip = ({ children, color = '#E94141' }) => (
 
 const Timer = ({ text }) => (
   <div className="flex items-center gap-1 text-[10px] text-gray-700 bg-white px-2 py-1 rounded-full shadow">
-    <svg className="w-3.5 h-3.5 text-[#E94141]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 8v4l3 3"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <img src={fireImg} alt="fire" className="w-3.5 h-3.5" />
     {text}
   </div>
 );
@@ -33,9 +34,12 @@ const LocalOfferCard = ({ image, title, transmission, location, mileage }) => {
           <Chip>OFFER</Chip>
         </div>
         <div className="grid grid-cols-2 gap-y-1 text-[11px] text-gray-500">
-          <div>Transmission: <span className="text-gray-700">{transmission}</span></div>
-          <div className="text-right">Mileage <span className="text-gray-700">{mileage}</span></div>
-          <div className="col-span-2">Location: <span className="text-gray-700">{location}</span></div>
+          <div className="whitespace-nowrap">Transmission: <span className="text-gray-500">{transmission}</span></div>
+          <div className="text-right">
+            <div className="text-gray-500">Mileage</div>
+            <div className="text-gray-900 font-bold text-base">{mileage}</div>
+          </div>
+          <div className="col-span-2 whitespace-nowrap">Location: <span className="text-gray-500">{location}</span></div>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ const TopCategories = () => {
 
   return (
     <section className="py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-[1041px] max-w-full mx-auto">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Top Categories</h2>
@@ -33,7 +33,7 @@ const TopCategories = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {items.map((it) => (
             <CategoryCard key={it.title} title={it.title} count={it.count} image={it.image} />
           ))}

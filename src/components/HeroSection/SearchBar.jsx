@@ -28,7 +28,7 @@ const SearchBar = () => {
 
   return (
     <div
-      className="w-[1081px] max-w-full mx-auto rounded-2xl bg-white/95 backdrop-blur-md px-4 md:px-6 py-4 shadow-lg"
+      className="w-[1041px] max-w-full mx-auto rounded-2xl bg-white/95 backdrop-blur-md px-4 md:px-6 py-4 shadow-lg"
       style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.25)' }}
     >
       <div className="flex flex-col lg:flex-row lg:items-end gap-3">

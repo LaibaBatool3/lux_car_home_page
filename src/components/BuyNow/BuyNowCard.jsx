@@ -1,4 +1,5 @@
 import React from 'react';
+import fireImg from '../../images/fire.png';
 
 const LikeBadge = () => (
   <div className="flex items-center gap-1 text-[10px] text-white bg-black/70 px-2 py-1 rounded-full">
@@ -9,7 +10,7 @@ const LikeBadge = () => (
 
 const Timer = ({ text }) => (
   <div className="flex items-center gap-1 text-[10px] text-gray-700 bg-white px-2 py-1 rounded-full shadow">
-    <svg className="w-3.5 h-3.5 text-[#E94141]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 8v4l3 3"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <img src={fireImg} alt="fire" className="w-3.5 h-3.5" />
     {text}
   </div>
 );
@@ -30,11 +31,11 @@ const BuyNowCard = ({ image, title, creator, currentBid, buyPrice }) => {
         <div className="grid grid-cols-2 gap-y-1 text-[11px] text-gray-500 mb-3">
           <div>Creator</div>
           <div className="text-right">Current Bid</div>
-          <div className="text-gray-700">{creator}</div>
-          <div className="text-right text-gray-700">{currentBid}</div>
+          <div className="text-gray-700 font-semibold whitespace-nowrap">{creator}</div>
+          <div className="text-right text-gray-700 font-semibold">{currentBid}</div>
         </div>
-        <button className="w-full bg-[#EEF0F3] text-[#1E1B2D] rounded-lg py-2.5 hover:shadow transition font-medium">
-          Buy Now in {buyPrice}
+        <button className="w-full bg-[#7A798A] text-white rounded-lg py-2.5 hover:shadow transition font-medium">
+          Buy Now in <span className="font-semibold">{buyPrice}</span>
         </button>
       </div>
     </div>

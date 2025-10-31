@@ -19,7 +19,7 @@ const data = [
 const LocalOffersSection = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="app-wrap">
+      <div className="w-[1041px] max-w-full mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Local Offers</h2>
           <div className="mt-2 flex justify-center">
@@ -27,7 +27,7 @@ const LocalOffersSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {data.map((o, i) => (
             <LocalOfferCard key={i} {...o} />
           ))}

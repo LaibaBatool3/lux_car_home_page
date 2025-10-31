@@ -10,19 +10,19 @@ const tags = [
 const DestinationsSection = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="app-wrap">
+      <div className="w-[1041px] max-w-full mx-auto px-4">
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1E1B2D]">Destinations</h2>
           <div className="mt-2 mb-6 flex justify-center">
           <span className="h-1 w-16 bg-[#E94141] rounded-full" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 max-w-5xl mx-auto mb-6">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
           <p className="text-sm md:text-base text-gray-600 md:flex-1">
             Lorem ipsum dolor sit amet. Vel aliquid reiciendis et molestias dignissimos quo eligendi eaque eum iusto explicabo et incidunt cupiditate. Est nemo delectus est quia Quis vel pariatur autem et veniam Quis id vero blanditiis. Ut esse commodi et nulla ullam qui laudantium consequatur est rerum deserunt est Quis nobis qui velit doloribus.
           </p>
           <div className="md:pl-6 md:self-start">
-            <button className="px-4 py-2 rounded-full border border-[#E94141] text-[#E94141] hover:bg-[#E94141] hover:text-white transition text-sm whitespace-nowrap">
+            <button className="px-4 py-2 rounded-full border border-[#CA0000] text-[#CA0000] hover:bg-[#CA0000] hover:text-white transition text-sm whitespace-nowrap">
               How it Works?
             </button>
           </div>
@@ -40,7 +40,7 @@ const DestinationsSection = () => {
             </button>
             <div className="absolute bottom-3 left-0 right-0 flex flex-wrap items-center justify-center gap-2 px-3">
               {tags.map((t, i) => (
-                <div key={t} className={`flex items-center gap-1 px-3 py-1 rounded-full text-[11px] shadow bg-white ${i===0 ? 'ring-2 ring-[#E94141]' : ''}`}>
+                <div key={t} className={`flex items-center gap-1 px-3 py-1 rounded-full text-[11px] shadow bg-white ${i===0 ? 'ring-2 ring-[#CA0000]' : ''}`}>
                   <img src={pinIcon} alt="pin" className="w-3.5 h-3.5" />
                   {t}
                 </div>
