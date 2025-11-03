@@ -7,14 +7,14 @@ import CarouselControls from '../shared/CarouselControls';
 const testimonials = [
   {
     quote:
-      'Auguе Sed viverra nulla Interdum mia bibendum velit sapien scelerisqu ictum quam tincidunt nec feugiat augue tincidunt. Etiam pretium diam rhoncus. gida turpis cursus. Nuncsed fringilla tortor iaculis eget',
+      'Augue Sed viverra nulla Interdum mia bibendum velit sapien\nscelerisqu ictum quam tincidunt nec feugiat augue tincidunt.\nEtiam pretium diam rhoncus. gida turpis cursus. Nuncsed\nfringilla tortor iaculis eget',
     name: 'Jody Andrews',
     role: 'Project Manager',
     avatar: girl1,
   },
   {
     quote:
-      'Auguе Sed viverra nulla Interdum mia bibendum velit sapien scelerisqu ictum quam tincidunt nec feugiat augue tincidunt. Etiam pretium diam rhoncus. gida turpis cursus. Nuncsed fringilla tortor iaculis eget',
+      'Augue Sed viverra nulla Interdum mia bibendum velit sapien\nscelerisqu ictum quam tincidunt nec feugiat augue tincidunt.\nEtiam pretium diam rhoncus. gida turpis cursus. Nuncsed\nfringilla tortor iaculis eget',
     name: 'Jody Andrews',
     role: 'Project Manager',
     avatar: girl2,

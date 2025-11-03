@@ -9,7 +9,7 @@ const LikeBadge = () => (
 );
 
 const Timer = ({ text }) => (
-  <div className="flex items-center gap-1 text-[10px] text-gray-700 bg-white px-2 py-1 rounded-full shadow">
+  <div className="flex items-center gap-1 text-[10px] text-gray-700 bg-white px-2 py-1 rounded-full shadow whitespace-nowrap">
     <img src={fireImg} alt="fire" className="w-3.5 h-3.5" />
     {text}
   </div>
@@ -21,7 +21,7 @@ const BuyNowCard = ({ image, title, creator, currentBid, buyPrice }) => {
       <div className="relative overflow-hidden rounded-xl">
         <img src={image} alt={title} className="w-full h-44 md:h-56 object-cover" />
         <div className="absolute top-3 right-3"><LikeBadge /></div>
-        <div className="absolute bottom-3 left-3"><Timer text="05 : 12 : 07 : 45" /></div>
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2"><Timer text="05 : 12 : 07 : 45" /></div>
       </div>
       <div className="pt-4">
         <div className="flex items-center justify-between mb-1">
@@ -34,7 +34,7 @@ const BuyNowCard = ({ image, title, creator, currentBid, buyPrice }) => {
           <div className="text-gray-700 font-semibold whitespace-nowrap">{creator}</div>
           <div className="text-right text-gray-700 font-semibold">{currentBid}</div>
         </div>
-        <button className="w-full bg-[#7A798A] text-white rounded-lg py-2.5 hover:shadow transition font-medium">
+        <button className="w-full bg-[#7A798A] text-white rounded-lg py-2.5 hover:shadow transition font-medium whitespace-nowrap">
           Buy Now in <span className="font-semibold">{buyPrice}</span>
         </button>
       </div>

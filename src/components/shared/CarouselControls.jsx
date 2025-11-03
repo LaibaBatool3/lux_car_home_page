@@ -3,7 +3,9 @@ import React from 'react';
 const Dot = ({ active }) => (
   <span
     className={`inline-block rounded-full transition-all duration-200 ${
-      active ? 'w-4 h-4 ring-2 ring-[#0F1222] bg-transparent' : 'w-2.5 h-2.5 bg-[#0F1222]/40'
+      active 
+        ? 'w-3 h-3 bg-black border border-gray-300' 
+        : 'w-3 h-3 bg-transparent border border-black'
     }`}
   />
 );

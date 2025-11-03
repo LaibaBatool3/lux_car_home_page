@@ -10,16 +10,24 @@ const Chip = ({ label }) => (
   </span>
 );
 
-const Row = ({ labels }) => (
-  <div
-    className="grid gap-2 mb-3"
-    style={{ gridTemplateColumns: `repeat(${labels.length}, minmax(max-content, 1fr))` }}
-  >
-    {labels.map((m) => (
-      <Chip key={m} label={m} />
-    ))}
-  </div>
-);
+const Row = ({ labels, centered = false }) => {
+  const rowContent = (
+    <div
+      className="grid gap-2 mb-3"
+      style={{ gridTemplateColumns: `repeat(${labels.length}, max-content)` }}
+    >
+      {labels.map((m) => (
+        <Chip key={m} label={m} />
+      ))}
+    </div>
+  );
+  
+  return centered ? (
+    <div className="flex justify-center">
+      {rowContent}
+    </div>
+  ) : rowContent;
+};
 
 const PopularMakesSection = () => {
   return (
@@ -34,7 +42,7 @@ const PopularMakesSection = () => {
         <div className="space-y-4">
           <Row labels={MAKES} />
           <Row labels={MAKES} />
-          <Row labels={['Honda','BMW','Bentley','Acura','Alfa Romeo','Chevrolet','Chrysler','Ferrari','Lamborghini','Land Rover','Yamaha ATV']} />
+          <Row labels={['Honda','BMW','Bentley','Acura','Alfa Romeo','Chevrolet','Chrysler','Ferrari','Lamborghini','Land Rover','Yamaha ATV']} centered={true} />
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar'; 
 import rocket from '../../assets/rocket.png';
 import bidding from '../../assets/bidding.png';
+import onlineCarAuctionsImg from '../../images/Online Car Auctions.png';
 
 const HeroSection = () => {
   const handleStartBidding = () => {
@@ -18,7 +19,7 @@ const HeroSection = () => {
       className="relative text-white w-full min-h-[calc(100vh-80px)] md:min-h-[750px]"
     >
       {/* Content - Centered */}
-      <div className="relative z-10 h-full flex flex-col justify-start items-center pt-32 md:pt-40">
+      <div className="relative z-10 h-full flex flex-col justify-start items-center pt-40 md:pt-48">
         <div className="app-wrap text-center">
           {/* Main Title */}
           <h1 
@@ -28,30 +29,9 @@ const HeroSection = () => {
           </h1>
           
           {/* Subtitle */}
-          <h2 className="mb-3 md:mb-4 text-base md:text-4xl font-semibold text-white">
-            <span 
-              className="text-white"
-              style={{
-                WebkitTextStroke: '3px #1E1B2D',
-                WebkitTextFillColor: 'white',
-                textShadow: `
-                  -3px -3px 0 #1E1B2D,
-                  3px -3px 0 #1E1B2D,
-                  -3px 3px 0 #1E1B2D,
-                  3px 3px 0 #1E1B2D,
-                  -2px -2px 0 #1E1B2D,
-                  2px -2px 0 #1E1B2D,
-                  -2px 2px 0 #1E1B2D,
-                  2px 2px 0 #1E1B2D,
-                  -1px -1px 0 #1E1B2D,
-                  1px -1px 0 #1E1B2D,
-                  -1px 1px 0 #1E1B2D,
-                  1px 1px 0 #1E1B2D
-                `
-              }}
-            >
-              Online Car Auctions
-            </span> With Home Delivery!
+          <h2 className="mb-3 md:mb-4 text-base md:text-5xl font-bold text-white flex items-center justify-center gap-2 flex-wrap">
+            <img src={onlineCarAuctionsImg} alt="Online Car Auctions" className="h-8 md:h-12" />
+            With Home Delivery!
           </h2>
           
           {/* Description */}

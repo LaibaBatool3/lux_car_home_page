@@ -6,10 +6,10 @@ import img3 from '../../images/bmwxii.png';
 import img4 from '../../images/bmwxiii.png';
 
 const mock = [
-  { image: img1, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
-  { image: img2, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
-  { image: img3, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
-  { image: img4, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
+  { image: img1, title: '"2018 BMW X1 XDRIVE"', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
+  { image: img2, title: '"2018 BMW X1 XDRIVE"', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
+  { image: img4, title: '"2018 BMW X1 XDRIVE"', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
+  { image: img3, title: '"2018 BMW X1 XDRIVE"', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
   { image: img1, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
   { image: img2, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
   { image: img3, title: '“2018 BMW X1 XDRIVE”', lot: '3849858', status: '3849858', location: '3849858', currentBid: '$1,300.00' },
